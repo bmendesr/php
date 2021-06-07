@@ -2,15 +2,10 @@
 
 require_once("config.php");
 
+$root = new Usuario();
 
-$sql= new Sql();
+$root->loadbyid(3);
 
-$usuarios=$sql->select("SELECT * FROM tb_usuarios");
-
-
-echo $usuarios;
-
-
-
+echo $root;
 
  ?>
