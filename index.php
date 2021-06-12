@@ -34,12 +34,24 @@ $aluno = new Usuario("aluno","alu123");
 $aluno->insert();
 
 echo $aluno;*/
+
+//Alterar um usuário ou senha
+/*
 $usuario = new Usuario();
 
 $usuario->loadByid(7);
 
 $usuario->update("aluno ramos","ramossenha");
 
+echo $usuario;*/
+
+$usuario = new Usuario();
+
+$usuario->loadByid(7);
+
+$usuario->delete();
+
 echo $usuario;
+
 
  ?>
